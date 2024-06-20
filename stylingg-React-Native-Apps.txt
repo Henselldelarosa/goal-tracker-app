@@ -1,0 +1,7 @@
+"Styling React Native Apps"
+#There is No CSS!
+(Inline Styles) <===> (STyleSheet Objects)
+
+#Write in JavaScript
+(i.e. in JavaScript code files, next to the component code)
+Based on CSS syntax, but only a "subset" of properties & features is supported!

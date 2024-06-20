@@ -1,0 +1,33 @@
+"Working With Core Components"
+
+1. "Core" Components -> (Built into React Native)
+-"Translation" to Native UI widgets is provided by React Native
+  1 <View/>
+  2 <Text/>
+  3 <Button/>
+  4 <TextInput/>
+  5 <Image/>
+  6 <... />
+2. Your UI & CUSTOM Components
+-Combination of "Core" components & other built-in components.
+
+<View/><Text/> =>
+Const MyTitle = props => {
+  return (
+    <View>
+      <Text>{props.title}</Text>
+    </View>
+  )
+}
+
+
+<View></View> works just like a <Div></Div>
+
+#Basic Components
+<View> => The most fundamental component for building a UI.
+<Text> => A compont for displaying text
+<Image> => A component for displaying images
+<TextInput> => A component for inputting text into the app via a keyboard
+<ScrollView> => Provides a scrolling container that can host multiple components and views
+<StyleSheet> => Provides an abstraction layer similar to CSS stylesheets
+(With React-Native you must import the components from the "react-native library")
