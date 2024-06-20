@@ -1,7 +1,22 @@
 "Styling React Native Apps"
 #There is No CSS!
-(Inline Styles) <===> (STyleSheet Objects)
+(Inline Styles) <===> (StyleSheet Objects)
 
 #Write in JavaScript
 (i.e. in JavaScript code files, next to the component code)
 Based on CSS syntax, but only a "subset" of properties & features is supported!
+
+#Styling
+(To style in react-native you must pass in the style prop into the component itsel)
+The style prop is not supported by all the elements
+--Supported Elements
+  1. <View></View>
+  2. <Text></Text>
+
+  #Layouts & Flexbox
+  flex: 1, => The element (container) should expand to occupy available space.
+
+  flexDirection: "column", => controls the oriantation of "Main Axis" and "Cross Axis"
+
+  justifyContetnt: "flex-start",
+  alignItems: "flex-start"

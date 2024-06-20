@@ -31,3 +31,6 @@ Const MyTitle = props => {
 <ScrollView> => Provides a scrolling container that can host multiple components and views
 <StyleSheet> => Provides an abstraction layer similar to CSS stylesheets
 (With React-Native you must import the components from the "react-native library")
+
+#User Interface
+<Button/> => In react native the "Button" component is a self closing tag and the inner text is added inside of the button tag itself by using the "title" in it also the text intered in the title element must be a string <Button title="Press Me"/>
