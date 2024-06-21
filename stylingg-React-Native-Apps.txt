@@ -20,3 +20,5 @@ The style prop is not supported by all the elements
 
   justifyContetnt: "flex-start",
   alignItems: "flex-start"
+
+  <Button/> doesnt have a "style" element
