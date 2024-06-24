@@ -13,8 +13,11 @@ import GoalInput from './components/GoalInput';
 
 export default function App() {
   const [goals, setGoals] = useState([])
+  const [showModal, setShowModal] = useState(false)
 
-
+  const handleShow = () => {
+    setShowModal(true)
+  }
 
   const addGoalHandler = (enteredGoalText) =>{
 
@@ -32,9 +35,16 @@ export default function App() {
   }
   return (
     <View style={styles.appContainer}>
-      <GoalInput
-      addGoal = {addGoalHandler}
+      <Button
+      title='Add New Goal'
+      color='#5e0acc'
+      onPress={handleShow}
       />
+
+      {showModal && <GoalInput
+      addGoal = {addGoalHandler}
+      showModal={showModal}
+      />}
 
 
       <View style={styles.goalsContainer}>
