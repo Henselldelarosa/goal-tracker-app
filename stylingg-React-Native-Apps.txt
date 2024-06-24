@@ -22,3 +22,12 @@ The style prop is not supported by all the elements
   alignItems: "flex-start"
 
   <Button/> doesnt have a "style" element
+
+  In react native the styling of the parent element doesnt carry on to the child.
+
+  <ScrollView> renders all the items which could be aproblem if you have a long list which could cause performing issues
+
+  <FlatList> should be used when you are doing a long list because it lazy loads the items as the user gets closer to it. When using <FlatList> you don't need to map through items you can pass in the data element to it and make it equal to the array that you want to map through. Then using the "renderItem" you create a arrow function and return what you need. When using <FlatList> to get unique items you can pass the "keyExtractor" element to it
+  keyExtractor = {(item, index) => {
+    return item.id
+  }}
