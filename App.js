@@ -19,6 +19,10 @@ export default function App() {
     setShowModal(true)
   }
 
+  const handleCancel = () => {
+    setShowModal(false)
+  }
+
   const addGoalHandler = (enteredGoalText) =>{
 
     setGoals((currentGoal) => [
@@ -26,6 +30,8 @@ export default function App() {
       {text: enteredGoalText, key: Math.random().toString()}
       //This is just for this example
     ])
+
+    setShowModal(false)
   }
 
   const handleDelete =(id) => {
@@ -42,6 +48,7 @@ export default function App() {
       />
 
       {showModal && <GoalInput
+      cancel={handleCancel}
       addGoal = {addGoalHandler}
       showModal={showModal}
       />}
